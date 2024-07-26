@@ -18,24 +18,132 @@ import pineapples from './images/pineapples.png';
 import broccoli from './images/broccoli.png';
 
 const products = [
-    { name: 'Apples', category: 'fruits', price: 45, img: apples, expirationDate: '2024-08-01' },
-    { name: 'Bananas', category: 'fruits', price: 32, img: bananas, expirationDate: '2024-07-30' },
-    { name: 'Oranges', category: 'fruits', price: 78, img: oranges, expirationDate: '2024-08-10' },
-    { name: 'Pears', category: 'fruits', price: 55, img: pears, expirationDate: '2024-08-05' },
-    { name: 'Pineapples', category: 'fruits', price: 85, img: pineapples , expirationDate: '2024-08-15' },
-    { name: 'Grapes', category: 'fruits', price: 65, img: grapes, expirationDate: '2024-08-03' },
-    { name: 'Carrots', category: 'vegetables', price: 22, img: carrots, expirationDate: '2024-08-20' },
-    { name: 'Broccoli', category: 'vegetables', price: 53, img: broccoli, expirationDate: '2024-08-18' },
-    { name: 'Peas', category: 'vegetables', price: 18, img: peas, expirationDate: '2024-08-22' },
-    { name: 'Kale', category: 'vegetables', price: 30, img: kale, expirationDate: '2024-08-12' },
-    { name: 'Spinach', category: 'vegetables', price: 20, img: spinach, expirationDate: '2024-08-14' },
-    { name: 'Celery', category: 'vegetables', price: 25, img: celery, expirationDate: '2024-08-17' },
-    { name: 'Milk', category: 'drinks', price: 15, img: milk, expirationDate: '2024-08-05' },
-    { name: 'Water', category: 'drinks', price: 10, img: water, expirationDate: '2025-07-01' },
-    { name: 'Juice', category: 'drinks', price: 30, img: juice, expirationDate: '2024-08-20' },
-    { name: 'Soda', category: 'drinks', price: 25, img: soda, expirationDate: '2025-01-01' },
-    { name: 'Tea', category: 'drinks', price: 20, img: tea, expirationDate: '2025-12-31' },
-    { name: 'Coffee', category: 'drinks', price: 40, img: coffee, expirationDate: '2025-06-01' }
+    {
+        name: 'Apples',
+        category: 'fruits',
+        price: 45,
+        img: apples,
+        expirationDate: '2024-08-01'
+    },
+    {
+        name: 'Bananas',
+        category: 'fruits',
+        price: 32,
+        img: bananas,
+        expirationDate: '2024-07-30'
+    },
+    {
+        name: 'Oranges',
+        category: 'fruits',
+        price: 78,
+        img: oranges,
+        expirationDate: '2024-08-10'
+    },
+    {
+        name: 'Pears',
+        category: 'fruits',
+        price: 55,
+        img: pears,
+        expirationDate: '2024-08-05'
+    },
+    {
+        name: 'Pineapples',
+        category: 'fruits',
+        price: 85,
+        img: pineapples,
+        expirationDate: '2024-08-15'
+    },
+    {
+        name: 'Grapes',
+        category: 'fruits',
+        price: 65,
+        img: grapes,
+        expirationDate: '2024-08-03'
+    },
+    {
+        name: 'Carrots',
+        category: 'vegetables',
+        price: 22,
+        img: carrots,
+        expirationDate: '2024-08-02'
+    },
+    {
+        name: 'Broccoli',
+        category: 'vegetables',
+        price: 53,
+        img: broccoli,
+        expirationDate: '2024-08-18'
+    },
+    {
+        name: 'Peas',
+        category: 'vegetables',
+        price: 18,
+        img: peas,
+        expirationDate: '2024-08-22'
+    },
+    {
+        name: 'Kale',
+        category: 'vegetables',
+        price: 19,
+        img: kale,
+        expirationDate: '2024-08-20'
+    },
+    {
+        name: 'Spinach',
+        category: 'vegetables',
+        price: 20,
+        img: spinach,
+        expirationDate: '2024-08-14'
+    },
+    {
+        name: 'Celery',
+        category: 'vegetables',
+        price: 18,
+        img: celery,
+        expirationDate: '2024-08-17'
+    },
+    {
+        name: 'Milk',
+        category: 'drinks',
+        price: 18,
+        img: milk,
+        expirationDate: '2024-08-05'
+    },
+    {
+        name: 'Water',
+        category: 'drinks',
+        price: 10,
+        img: water,
+        expirationDate: '2025-07-01'
+    },
+    {
+        name: 'Juice',
+        category: 'drinks',
+        price: 30,
+        img: juice,
+        expirationDate: '2024-08-20'
+    },
+    {
+        name: 'Soda',
+        category: 'drinks',
+        price: 25,
+        img: soda,
+        expirationDate: '2025-01-01'
+    },
+    {
+        name: 'Tea',
+        category: 'drinks',
+        price: 20,
+        img: tea,
+        expirationDate: '2025-12-31'
+    },
+    {
+        name: 'Coffee',
+        category: 'drinks',
+        price: 40,
+        img: coffee,
+        expirationDate: '2025-06-01'
+    }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
