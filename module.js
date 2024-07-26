@@ -146,7 +146,6 @@ const products = [
     }
 ];
 
-document.addEventListener('DOMContentLoaded', () => {
     const categories = document.querySelectorAll('.category');
     const productList = document.getElementById('product-list');
     const productInfo = document.getElementById('product-info');
@@ -311,4 +310,4 @@ document.addEventListener('DOMContentLoaded', () => {
             shoppingCart.appendChild(noOrders);
         }
     }
-});
+
