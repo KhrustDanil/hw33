@@ -1,0 +1,237 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 0;box-sizing: border-box;
+}
+
+h2, h3, h4 {
+  color: #333333;
+}
+
+.header {
+  background-color: #FF7043;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.left-sidebar, .right-sidebar {
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 25%;
+}
+
+.left-sidebar h2, .right-sidebar h2 {
+  border-bottom: 2px solid #FF7043;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category {
+  padding: 10px 0;
+  cursor: pointer;
+  color: #00796B;
+}
+
+.category:hover {
+  color: #FF7043;
+}
+
+/* Main Content */
+.main-content {
+  width: 50%;
+}
+
+#product-info {
+  display: none;
+}
+
+#products-section h2 {
+  border-bottom: 2px solid #FF7043;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#product-list {
+  padding-left: 0;
+}
+
+.product-card {
+  display: inline-block;
+  width: calc(33.333% - 20px);
+  margin: 10px;
+  vertical-align: top;
+  background-color: #FFF;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.product-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.product-info-button, #buy-button, #form-submit, .orders-button {
+  background-color: #00796B;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product-info-button:hover, #buy-button:hover, #form-submit:hover, .orders-button:hover {
+  background-color: #005B4F;
+}
+
+.product-info-button:focus, #buy-button:focus, #form-submit:focus, .orders-button:focus {
+  outline: none;
+}
+
+/* Order Form */
+.order-form {
+  display: none;
+}
+
+.order-form label, .order-form input, .order-form select {
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.order-form select {
+  width: 95%;
+}
+
+.order-form input, .order-form select {
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+
+.order-form h4 {
+  border-bottom: 2px solid #FF7043;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.order-form .form-item {
+  margin-top: 10px;
+}
+
+.order-form input[type="radio"] {
+  display: none;
+}
+
+.order-form input[type="radio"] + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 15px;
+  color: #00796B;
+}
+
+.order-form input[type="radio"] + label:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 2px solid #00796B;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+}
+
+.order-form input[type="radio"]:checked + label:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00796B;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+#shopping-cart-section {
+  display: none;
+  margin-top: 30px;
+}
+
+#shopping-cart {
+  max-height: 400px; 
+  overflow-y: auto; 
+  max-width: 100%;
+}
+
+#shopping-cart table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#shopping-cart th, #shopping-cart td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+#shopping-cart th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+#shopping-cart td {
+  background-color: #fff;
+}
+
+#shopping-cart tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Стиль для кнопок */
+.delete-orders-button {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.delete-orders-button:hover {
+  background-color: #ff0000;
+}
+
+
+#shopping-cart-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
